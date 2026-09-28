@@ -1,0 +1,7 @@
+# Large source textbook; keep out of GitHub (>100 MB)
+Campbell Biology, 12th (2020)188MB.pdf
+
+# Python and macOS generated files
+__pycache__/
+*.py[cod]
+.DS_Store

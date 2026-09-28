@@ -302,6 +302,11 @@ footer a { color: var(--gold); text-decoration: none; }
 .lesson-card { background: white; border: 1px solid var(--border); border-radius: 9px; padding: 15px 16px; }
 .lesson-card h3 { margin: 0 0 6px; font-size: 16px; }
 .lesson-card p { margin: 0; font-size: 14px; color: var(--text-light); }
+.lesson-video { background: white; border: 1px solid var(--border); border-radius: 9px; padding: 12px; overflow: hidden; }
+.lesson-video iframe { display: block; width: 100%; aspect-ratio: 16 / 9; border: 0; border-radius: 6px; background: #111; }
+.lesson-video h3 { margin: 10px 0 5px; font-size: 16px; }
+.lesson-video p { margin: 0; font-size: 13px; color: var(--text-light); }
+.lesson-video a { display: inline-block; margin-top: 8px; font-size: 13px; font-weight: 700; }
 .lesson-table-wrap { overflow-x: auto; margin: 14px 0 20px; }
 .lesson-table { border-collapse: collapse; width: 100%; background: white; font-size: 14px; }
 .lesson-table th, .lesson-table td { border: 1px solid var(--border); padding: 10px 12px; text-align: left; vertical-align: top; }

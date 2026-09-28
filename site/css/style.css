@@ -280,3 +280,52 @@ footer a { color: var(--gold); text-decoration: none; }
   .nav-links { display: none; }
   .page-header h1 { font-size: 26px; }
 }
+
+/* ── STUDY LESSONS ── */
+.lesson-header { padding: 38px 24px 32px; }
+.lesson-header .eyebrow { font-size: 12px; font-weight: 800; letter-spacing: 1.2px; text-transform: uppercase; opacity: .82; margin-bottom: 8px; }
+.lesson-header h1 { max-width: 850px; line-height: 1.18; }
+.lesson-header p { max-width: 780px; }
+.lesson-wrap { max-width: 920px; margin: 0 auto; }
+.lesson-toc { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 20px; }
+.lesson-toc a { color: white; text-decoration: none; font-size: 13px; font-weight: 650; padding: 6px 10px; border: 1px solid rgba(255,255,255,.35); border-radius: 20px; }
+.lesson-toc a:hover { background: rgba(255,255,255,.15); }
+.lesson-section { scroll-margin-top: 84px; margin: 0 0 28px; }
+.lesson-section h2 { color: var(--primary-dark); font-size: 25px; line-height: 1.25; margin: 0 0 12px; }
+.lesson-section h3 { color: var(--primary-dark); font-size: 18px; margin: 18px 0 8px; }
+.lesson-section p { margin: 0 0 12px; }
+.lesson-section ul, .lesson-section ol { padding-left: 24px; margin: 8px 0 16px; }
+.lesson-section li { margin-bottom: 6px; }
+.lesson-callout { background: var(--accent); border-left: 4px solid var(--leaf); border-radius: 0 8px 8px 0; padding: 15px 18px; margin: 18px 0; }
+.lesson-callout strong { color: var(--primary-dark); }
+.lesson-card-grid { display: grid; grid-template-columns: repeat(auto-fit,minmax(220px,1fr)); gap: 12px; margin: 14px 0 20px; }
+.lesson-card { background: white; border: 1px solid var(--border); border-radius: 9px; padding: 15px 16px; }
+.lesson-card h3 { margin: 0 0 6px; font-size: 16px; }
+.lesson-card p { margin: 0; font-size: 14px; color: var(--text-light); }
+.lesson-table-wrap { overflow-x: auto; margin: 14px 0 20px; }
+.lesson-table { border-collapse: collapse; width: 100%; background: white; font-size: 14px; }
+.lesson-table th, .lesson-table td { border: 1px solid var(--border); padding: 10px 12px; text-align: left; vertical-align: top; }
+.lesson-table th { color: var(--primary-dark); background: var(--accent); }
+.lesson-table caption { text-align: left; font-weight: 700; color: var(--primary-dark); padding: 0 0 8px; }
+.lesson-flow { display: grid; grid-template-columns: repeat(auto-fit,minmax(130px,1fr)); gap: 10px; counter-reset: flow; margin: 16px 0 20px; }
+.lesson-flow > div { position: relative; background: white; border: 1px solid var(--border); border-radius: 9px; padding: 14px 12px 12px; }
+.lesson-flow > div::before { counter-increment: flow; content: counter(flow); display: inline-grid; place-items: center; width: 25px; height: 25px; border-radius: 50%; background: var(--primary); color: white; font-weight: 800; font-size: 13px; margin-bottom: 7px; }
+.lesson-flow strong { display: block; color: var(--primary-dark); font-size: 14px; }
+.lesson-flow span { display: block; color: var(--text-light); font-size: 13px; line-height: 1.45; }
+.lesson-diagram { background: white; border: 1px solid var(--border); border-radius: 10px; padding: 12px; margin: 16px 0 20px; overflow-x: auto; }
+.lesson-diagram svg { display: block; width: 100%; min-width: 500px; height: auto; }
+.lesson-diagram figcaption { color: var(--text-light); font-size: 13px; margin-top: 8px; }
+.lesson-details { background: white; border: 1px solid var(--border); border-radius: 9px; padding: 12px 15px; margin: 10px 0; }
+.lesson-details summary { cursor: pointer; color: var(--primary-dark); font-weight: 750; }
+.lesson-details p { margin: 9px 0 2px; }
+.lesson-checklist { list-style: none; padding: 0 !important; }
+.lesson-checklist li { padding: 8px 10px 8px 36px; background: white; border: 1px solid var(--border); border-radius: 7px; margin-bottom: 7px; position: relative; }
+.lesson-checklist li::before { content: "□"; position: absolute; left: 12px; color: var(--leaf); font-size: 18px; top: 4px; }
+.lesson-source { color: var(--text-light); font-size: 12px; border-top: 1px solid var(--border); padding-top: 12px; margin-top: 24px; }
+.lesson-nav { display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+.lesson-nav a { font-weight: 700; }
+@media (max-width: 640px) {
+  .lesson-header { padding: 30px 20px 26px; }
+  .lesson-section h2 { font-size: 22px; }
+  .lesson-flow { grid-template-columns: 1fr 1fr; }
+}
